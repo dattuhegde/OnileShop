@@ -1,0 +1,1 @@
+web: gunicorn netshop.wsgi --log-file -

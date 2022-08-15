@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout Page</title>
+</head>
+<body>
+This is check page
+
+{% for item in cart %}
+{% with product=item.product %}
+{{ product.name }}
+{{ item.quantity }}
+{% endwith %}
+{% endfor %}
+</body>
+</html>
